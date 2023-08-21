@@ -1,0 +1,9 @@
+name: IPWhitelistX
+description: A Minecraft plugin that allows the admin to whitelist certain IPs.
+main: com.github.rishant3441.ipwhitelistx.IPWhitelistX
+api-version: 1.20
+author: rishant3441
+version: 1.0
+commands:
+  ipwhitelistx:
+    description: The default IPWhitelistX command.
