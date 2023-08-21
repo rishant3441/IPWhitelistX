@@ -15,16 +15,15 @@ public class IPWhitelistXCommand implements CommandExecutor {
 
     private static void printHelpMessage(CommandSender commandSender)
     {
-        commandSender.sendMessage("§aIP Whitelist X commands");
-        commandSender.sendMessage("§7---------------------");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " enable");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " disable");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " addplayer <Username>");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " removeplayer <Username>");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " addip <IP> <Username>");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " removeip <IP>");
-        commandSender.sendMessage("§a/" + "ipwhitelistx" + " lists");
-        commandSender.sendMessage("§7---------------------");
+        commandSender.sendMessage("IP Whitelist X commands");
+        commandSender.sendMessage("---------------------");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " enable");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " disable");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " addplayer <Username>");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " removeplayer <Username>");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " addip <IP> <Username>");
+        commandSender.sendMessage("/" + "ipwhitelistx" + " removeip <IP>");
+        commandSender.sendMessage("---------------------");
     }
 
     private static <T, E> T getKeyByValue(HashMap<T,E> map, E value)
@@ -134,7 +133,7 @@ public class IPWhitelistXCommand implements CommandExecutor {
         }
         else
         {
-            printHelpMessage(commandSender);
+            commandSender.sendMessage("This command must be ran from the server console!");
             return false;
         }
     }

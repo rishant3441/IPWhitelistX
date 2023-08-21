@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.github.rishant3441.ipwhitelistx'
-version = '1.0'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
