@@ -44,6 +44,7 @@ public class IPWhitelistX extends JavaPlugin {
             try {
                 dataFile.createNewFile();
                 enabledFile.createNewFile();
+                saveIPs();
                 Bukkit.getConsoleSender().sendMessage("[IPWhitelistX] - Data file does not exist! Creating new data file...");
             }
             catch (Exception e){
